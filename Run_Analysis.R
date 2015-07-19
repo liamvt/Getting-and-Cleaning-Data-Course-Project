@@ -1,6 +1,4 @@
-setwd("C:/Users/Liam/Dropbox/coursera/datascience/3. Getting and Cleaning Data/assignment")
-
-library(dplyr)
+library(plyr)
 library(dplyr)
 
 #### STEP 1: MERGE THE TRAINING AND TESTING SETS TO CREATE ONE DATA SET ####
