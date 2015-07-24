@@ -27,3 +27,4 @@ This file describes how to download the data, how the run_analysis.R script work
 4. The run_analysis.R script outputs a file named "tidyDf.txt" into the working directory
   - To read this file in R, enter the command read.table("tidyDf.txt", header=TRUE)
   - TidyDF contains 180 observations of 68 variables
+    * See the Code Book for descriptions of these variables
