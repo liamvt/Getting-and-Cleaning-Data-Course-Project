@@ -4,7 +4,11 @@ This file describes how to download the data, how the run_analysis.R script work
 
 1. Download the data from this [link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 2. Unzip the "UCI HAR Dataset" folder into your working directory
-3. Copy the run_analysis.R file into your working directory and enter the command source("run_analysis.R")
+3. Copy the run_analysis.R file into your working directory
+4. The run_analysis.R script uses the plyr and dplyr packages. These packages need to be installed for the script to run.
+  - To install enter the following commands in R
+    * install.packages("dplyr"); install.packages("plyr")
+3. Enter the command source("run_analysis.R")
 
   - The run_analysis.R script performs the following transformations on the raw data:
       - Reads in the three parts of both the training and testing raw data sets
@@ -21,4 +25,5 @@ This file describes how to download the data, how the run_analysis.R script work
         * Writes this new data frame to a .txt file using write.table
 
 4. The run_analysis.R script outputs a file named "tidyDf.txt" into the working directory
-  - To read this file in R, enter the command read.table("tidyDf.txt")
+  - To read this file in R, enter the command read.table("tidyDf.txt", header=TRUE)
+  - TidyDF contains 180 observations of 68 variables
